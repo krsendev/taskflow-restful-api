@@ -1,16 +1,38 @@
-# Task Manager Fullstack
+# TaskFlow
 
-TaskFlow, aplikasi Task Manager Fullstack menggunakan React, Express.js, Supabase, dan JWT Authentication.
+TaskFlow is a Fullstack Task Management application built with React, Express.js, Supabase PostgreSQL, and JWT Authentication. The project implements a RESTful API architecture with user authentication, authorization, and complete CRUD operations for task management.
 
 ## Features
+
+### Authentication & Authorization
 
 - User Registration
 - User Login
 - JWT Authentication
 - Protected Routes
-- Task Management (CRUD)
-- Task Completion Status
-- Swagger API Documentation
+- User-based Resource Authorization
+
+### RESTful API
+
+- Create Task
+- Get All Tasks
+- Get Task By ID
+- Update Task
+- Delete Task
+- Toggle Task Completion Status
+
+### Frontend
+
+- React SPA
+- Protected Dashboard
+- Authentication Context
+- Task Management Interface
+
+### Database
+
+- Supabase PostgreSQL
+- Relational Data Structure
+- User-Task Ownership
 
 ## Tech Stack
 
@@ -29,108 +51,24 @@ TaskFlow, aplikasi Task Manager Fullstack menggunakan React, Express.js, Supabas
 
 ### Database
 
-- Supabase
+- Supabase PostgreSQL
 
----
+## RESTful API Endpoints
 
-## Installation
+Authentication:
 
-### Clone Repository
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/auth/me
 
-```bash
-git clone <repository-url>
-cd project
-```
+Tasks:
 
----
+- GET /api/tasks
+- GET /api/tasks/:id
+- POST /api/tasks
+- PATCH /api/tasks/:id
+- DELETE /api/tasks/:id
 
-## Backend Setup
+Full API documentation is available via Swagger:
 
-```bash
-cd backend
-npm install
-```
-
-Create `.env` file:
-
-```env
-PORT=5000
-
-SUPABASE_URL=your_supabase_url
-
-SUPABASE_KEY=your_supabase_key
-
-JWT_SECRET=your_jwt_secret
-```
-
-Run backend:
-
-```bash
-npm run dev
-```
-
-Backend URL:
-
-```text
-http://localhost:5000
-```
-
-Swagger Documentation:
-
-```text
 http://localhost:5000/docs
-```
-
----
-
-## Frontend Setup
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Frontend URL:
-
-```text
-http://localhost:5173
-```
-
----
-
-## API Documentation
-
-API documentation is available through Swagger UI:
-
-```text
-http://localhost:5000/docs
-```
-
----
-
-## Project Structure
-
-```text
-project/
-│
-├── backend/
-│
-└── frontend/
-```
-
----
-
-## Preview
-
-Add screenshots of:
-![Login](./img/login.png)
-![Register](./img/register.png)
-![Dashboard](./img/dashboard.png)
-
----
-
-## Author
-
-Krisna Guntur Pamungkas
-241080200051
