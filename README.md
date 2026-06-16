@@ -1,6 +1,6 @@
 # Task Manager Fullstack
 
-Aplikasi Task Manager Fullstack menggunakan React, Express.js, Supabase PostgreSQL, dan JWT Authentication.
+TaskFlow, aplikasi Task Manager Fullstack menggunakan React, Express.js, Supabase, dan JWT Authentication.
 
 ## Features
 
@@ -29,7 +29,7 @@ Aplikasi Task Manager Fullstack menggunakan React, Express.js, Supabase PostgreS
 
 ### Database
 
-- Supabase PostgreSQL
+- Supabase
 
 ---
 
